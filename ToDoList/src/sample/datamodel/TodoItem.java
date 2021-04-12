@@ -1,16 +1,18 @@
 package sample.datamodel;
 
+
 import java.time.LocalDate;
 
 public class TodoItem {
+
     private String shortDescription;
     private String details;
-    private LocalDate deadLine;
+    private LocalDate deadline;
 
-    public TodoItem(String shortDescription, String details, LocalDate deadLine) {
+    public TodoItem(String shortDescription, String details, LocalDate deadline) {
         this.shortDescription = shortDescription;
         this.details = details;
-        this.deadLine = deadLine;
+        this.deadline = deadline;
     }
 
     public String getShortDescription() {
@@ -29,12 +31,12 @@ public class TodoItem {
         this.details = details;
     }
 
-    public LocalDate getDeadLine() {
-        return deadLine;
+    public LocalDate getDeadline() {
+        return deadline;
     }
 
-    public void setDeadLine(LocalDate deadLine) {
-        this.deadLine = deadLine;
+    public void setDeadline(LocalDate deadline) {
+        this.deadline = deadline;
     }
 
     @Override
@@ -42,3 +44,4 @@ public class TodoItem {
         return shortDescription;
     }
 }
+
